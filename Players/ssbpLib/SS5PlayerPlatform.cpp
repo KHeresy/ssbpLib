@@ -63,8 +63,7 @@ namespace ss
 		*/
 		long rc = 0;
 
-		//TODO: need to convert char to wchar
-		rc = (long)LoadGraph((TCHAR*)pszFileName);
+		rc = (long)LoadGraph(C2WC(pszFileName));
 		//SpriteStudioで設定されたテクスチャ設定を反映させるための分岐です。
 		switch (wrapmode)
 		{

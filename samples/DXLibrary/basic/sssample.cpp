@@ -118,7 +118,7 @@ void update(float dt)
 	//取得座用の表示
 	sprintf(str, "body = x:%f y:%f", result.x, result.y);
 	//TODO: need to convert char to wchar
-	DrawString(100, 120, (wchar_t*)str, GetColor(255, 255, 255));
+	DrawString(100, 120, C2WC(str), GetColor(255, 255, 255));
 
 
 	//キー入力操作
@@ -212,7 +212,7 @@ void update(float dt)
 	//アニメーションのフレームを表示
 	sprintf(str, "play:%d frame:%d drawCount:%d", (int)sstest_pause, sstest_count, ssplayer->getDrawSpriteCount());
 	//TODO: need to convert char to wchar
-	DrawString(100, 100, (wchar_t*)str, GetColor(255, 255, 255));
+	DrawString(100, 100, C2WC(str), GetColor(255, 255, 255));
 
 	//プレイヤーの更新、引数は前回の更新処理から経過した時間
 	ssplayer->update(dt);

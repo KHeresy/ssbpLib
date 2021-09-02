@@ -75,6 +75,9 @@
     <ClInclude Include="common\Loader\SsEffectBehavior.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
+    <ClInclude Include="StringConverter.h">
+      <Filter>來源檔案</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SS5PlayerPlatform.cpp">

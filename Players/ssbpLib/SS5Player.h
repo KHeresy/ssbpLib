@@ -82,6 +82,8 @@ https://github.com/SpriteStudio/SpriteStudio5-SDK/wiki/%E3%82%B3%E3%83%B3%E3%83%
 #include <assert.h>
 #include <time.h>
 
+#include "StringConverter.h"
+
 //エフェクト関連
 #include "./Common/loader/ssloader.h"
 #include "./Common/Animator/ssplayer_macro.h"
